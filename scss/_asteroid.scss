@@ -1,0 +1,56 @@
+.asteroid-1 {
+    width: 15%;
+    height: auto;
+
+    position: absolute;
+    z-index: -5;
+    top: 30%;
+    left: 60%;
+
+    //animation: asteroidOne 20s infinite;
+}
+
+.asteroid-2 {
+    width: 12%;
+    height: auto;
+
+    transform: rotate(27%);
+
+    position: absolute;
+    z-index: -5;
+    bottom: 10%;
+    left: 25%;
+
+    //animation: asteroidTwo 20s infinite;
+}
+
+/* @keyframes asteroidOne {
+    0% {
+        transform: translatey(0px);
+    }
+
+    50% {
+        transform: translatey(-70px);
+    }
+
+    100% {
+        transform: translatey(0px);
+    }
+}
+
+@keyframes asteroidTwo {
+    0% {
+        transform: translatey(0px);
+        transform: translatex(0px);
+    }
+
+    50% {
+        transform: translatey(-70px);
+        transform: translatex(-70px);
+    }
+
+    100% {
+        transform: translatey(0px);
+        transform: translatex(0px);
+    }
+} */
