@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: url('../img/stardust.png');
+    color: $main-font-color;
+
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    a {
+        text-decoration: none;
+        color: $main-font-color;
+
+    }
+}
+
+
+@media screen and (min-width: 768px) {
+
+    .main-content {
+        border-right: em(2) solid $line-color;
+    }
+
+    .side-content {
+        border-right: em(2) solid $line-color;
+    }
+
+    .menu-holder {
+        border-right: em(2) solid $line-color;
+    }
+
+    .content-container {
+        height: 100%;
+        padding: 0 em(20) 0 0;
+    }
+
+    .big-content {
+        padding-right: em(31.7);
+    }
+
+}

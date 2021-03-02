@@ -1,13 +1,14 @@
-#about {
-    height: 92vh;
-}
-
-
 /*
 *
-* Breakpoints media queries
+* Generals
 *
 */
+
+
+#about {
+    height: 100vh;
+}
+
 
 .switchers {
     display: none;
@@ -17,7 +18,16 @@
     position: static;
 }
 
+
+/*
+*
+* Breakpoints media queries
+*
+*/
+
 @media screen and (max-width: 768px) {
+
+    // Heading
     .heading-container {
         height: 50%;
     }
@@ -43,6 +53,7 @@
         align-items: flex-end;
     }
 
+    // Button
     .button-holder {
         display: flex;
         justify-content: center;
@@ -72,6 +83,7 @@
         }
     }
 
+    // Cards
     .cards-container {
         min-height: 50%;
         position: relative;
@@ -130,6 +142,7 @@
         opacity: 0;
     }
 
+    // Switchers
     .switchers {
         display: flex;
         flex-flow: row wrap;
@@ -159,4 +172,113 @@
     }
 }
 
-@media screen and (min-width: 768px) {}
+@media screen and (min-width: 768px) {
+
+    // Heading
+    .heading-container {
+        height: 30%;
+    }
+
+    .about-heading-holder {
+        border-right: em(2) solid $line-color;
+        padding-right: 0;
+
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: flex-end;
+    }
+
+    .about-heading {
+        font-size: em(45);
+        font-weight: $light;
+
+        text-align: right;
+
+        padding-right: em(20, 45);
+        border-right: em(3, 50) solid $main-highligh-color;
+
+        span {
+            font-weight: $bold;
+            text-transform: uppercase;
+
+            color: $main-highligh-color;
+        }
+    }
+
+    // Button
+    .button-holder {
+        border-right: em(2) solid $line-color;
+
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .learn-more-btn {
+        font-size: em(25);
+        font-weight: $bold;
+
+        color: $main-highligh-color;
+
+        padding: em(10, 25) em(20, 25);
+        margin-bottom: em(30, 25);
+
+        background-color: unset;
+
+        border: em(5, 25) solid $main-highligh-color;
+        border-radius: em(61, 25);
+
+        transition: color .5s ease-out;
+        transition: background-color .5s ease-out;
+
+        &:hover,
+        &:focus {
+            background-color: $main-highligh-color;
+            color: $main-font-color;
+        }
+    }
+
+    // Cards
+    .cards-container {
+        height: 70%;
+        border-right: em(2) solid $line-color;
+
+        align-items: center;
+    }
+
+    .card {
+        background-color: $cards-bg;
+
+        text-align: center;
+
+        margin: 0 auto;
+
+        padding: em(30) em(20);
+
+        height: em(350);
+
+        border-radius: em(6);
+    }
+
+    .card-title {
+        font-size: em(30);
+        font-weight: $bold;
+
+        color: $sub-highlight-color;
+
+        margin-bottom: em(30, 30);
+        padding-bottom: em(15, 30);
+
+        border-bottom: em(1, 30) solid $sub-font-color;
+    }
+
+    .card-desc {
+        font-size: em(15);
+        font-weight: $light;
+
+        color: $sub-font-color;
+
+        padding: 0 em(15, 15);
+    }
+}
