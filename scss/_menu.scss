@@ -27,10 +27,13 @@
         justify-content: space-between;
         align-items: center;
 
-        background-image: url('../img/stardust.png');
+        background-color: $bg-color;
 
         position: fixed;
         z-index: 10;
+
+        border: none;
+        outline: none;
     }
 
     .logo {

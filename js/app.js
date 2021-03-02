@@ -44,16 +44,54 @@ $(window).scroll(function () {
 
 /*
  *
- * GSAP anims
+ * Cards switcherino
  *
  */
+
+const uiCard = document.querySelector('.ui-card-col');
+const frontEndCard = document.querySelector('.frontend-card-col');
+const logoCard = document.querySelector('.logo-card-col');
+
+const uiSwitch = document.querySelector('.UI-switch')
+const frontEndSwitch = document.querySelector('.frontend-switch')
+const logoSwitch = document.querySelector('.logo-switch')
+
+uiSwitch.addEventListener('click', () => {
+    uiSwitch.classList.add('switch-active');
+    frontEndSwitch.classList.remove('switch-active');
+    logoSwitch.classList.remove('switch-active');
+
+    uiCard.style.opacity = "1";
+    frontEndCard.style.opacity = "0";
+    logoCard.style.opacity = "0";
+});
+
+frontEndSwitch.addEventListener('click', () => {
+    uiSwitch.classList.remove('switch-active')
+    frontEndSwitch.classList.add('switch-active')
+    logoSwitch.classList.remove('switch-active');
+
+    uiCard.style.opacity = "0";
+    frontEndCard.style.opacity = "1";
+    logoCard.style.opacity = "0";
+});
+
+logoSwitch.addEventListener('click', () => {
+    uiSwitch.classList.remove('switch-active')
+    frontEndSwitch.classList.remove('switch-active')
+    logoSwitch.classList.add('switch-active');
+
+    uiCard.style.opacity = "0";
+    frontEndCard.style.opacity = "0";
+    logoCard.style.opacity = "1";
+})
 
 
 const tl = gsap.timeline();
 
 /*
  *
- * Landing page animations
+ * Loading page animations
  *
  */
 
