@@ -20,7 +20,9 @@
 @media screen and (max-width: 768px) {
     .nav-container {
         height: 8vh;
-        width: 95%;
+        width: 100%;
+
+        padding: 0 em(20);
 
         display: flex;
         flex-flow: row wrap;
@@ -37,12 +39,13 @@
     }
 
     .logo {
-        width: 50px;
+        width: 60px;
         height: auto;
     }
 
     .nav-mobile {
         display: flex;
+        align-items: center;
     }
 
     .menu-button {
@@ -52,11 +55,9 @@
         color: $main-highligh-color;
 
         border: em(2, 14) solid $main-highligh-color;
-        border-radius: em(30, 14);
+        border-radius: em(20, 14);
 
         padding: em(2, 14) em(10, 14);
-
-        margin-right: em(20, 14);
 
         transition: color .5s ease-out;
         transition: background-color .5s ease-out;
@@ -66,6 +67,44 @@
             background-color: $main-highligh-color;
             color: $main-font-color;
         }
+    }
+
+    .ham {
+        cursor: pointer;
+        transition: transform 400ms;
+        user-select: none;
+    }
+
+    .hamRotate.active {
+        transform: rotate(45deg);
+    }
+
+    .hamRotate180.active {
+        transform: rotate(180deg);
+    }
+
+    .line {
+        fill: none;
+        transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+        stroke: white;
+        stroke-width: 5;
+        stroke-linecap: round;
+    }
+
+    .ham1 .top {
+        stroke-dasharray: 40 139;
+    }
+
+    .ham1 .bottom {
+        stroke-dasharray: 40 180;
+    }
+
+    .ham1.active .top {
+        stroke-dashoffset: -98px;
+    }
+
+    .ham1.active .bottom {
+        stroke-dashoffset: -138px;
     }
 }
 

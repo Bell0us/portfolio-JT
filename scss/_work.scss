@@ -31,6 +31,24 @@
         height: 65%;
     }
 
+    .work-side-content {
+        height: 35%;
+
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .site-container {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+
+        height: 50%;
+    }
+
     .work-heading {
         font-size: em(35);
         font-weight: $light;
@@ -44,17 +62,17 @@
     }
 
     .discover-button {
-        font-size: em(20);
-        font-weight: $bold;
+        font-size: em(18);
+        font-weight: $regular;
 
         color: $main-highligh-color;
 
-        padding: em(10, 20) em(20, 20);
-        margin-bottom: em(40, 20);
+        padding: em(6, 18) em(18, 18);
+        margin-bottom: em(40, 18);
 
         background-color: unset;
-        border: em(4, 20) solid $main-highligh-color;
-        border-radius: em(61, 20);
+        border: em(3, 18) solid $main-highligh-color;
+        border-radius: em(61, 18);
 
         transition: color .5s ease-out;
         transition: background-color .5s ease-out;
@@ -68,15 +86,15 @@
 
 
     .site-desc {
-        font-size: em(25);
+        font-size: em(30);
         font-weight: $bold;
 
-        line-height: em(20, 25);
+        line-height: em(20, 30);
 
         color: $sub-highlight-color;
 
         small {
-            font-size: em(16, 25);
+            font-size: em(16, 30);
             font-weight: $light;
 
             color: $sub-font-color;
@@ -84,16 +102,16 @@
     }
 
     .website-button {
-        font-size: em(16);
-        font-weight: $bold;
+        font-size: em(14);
+        font-weight: $regular;
 
         color: $sub-highlight-color;
 
-        padding: em(7, 16) em(12, 16);
+        padding: em(5, 14) em(15, 14);
 
         background-color: unset;
-        border: em(3, 16) solid $sub-highlight-color;
-        border-radius: em(8, 16);
+        border: em(2, 14) solid $sub-highlight-color;
+        border-radius: em(8, 14);
 
         transition: color .5s ease-out;
         transition: background-color .5s ease-out;
@@ -143,18 +161,18 @@
     }
 
     .discover-button {
-        font-size: em(25);
-        font-weight: $bold;
+        font-size: em(22);
+        font-weight: $regular;
 
         color: $main-highligh-color;
 
-        padding: em(10, 25) em(20, 25);
-        margin-top: em(40, 25);
+        padding: em(6, 22) em(18, 22);
+        margin-top: em(40, 22);
 
 
         background-color: unset;
-        border: em(5, 25) solid $main-highligh-color;
-        border-radius: em(61, 25);
+        border: em(3, 22) solid $main-highligh-color;
+        border-radius: em(61, 22);
 
         transition: color .5s ease-out;
         transition: background-color .5s ease-out;
@@ -182,14 +200,14 @@
 
         text-align: center;
 
-        line-height: em(20, 40);
+        line-height: em(22, 40);
 
         color: $sub-highlight-color;
 
 
 
         small {
-            font-size: em(16, 40);
+            font-size: em(20, 40);
             font-weight: $light;
 
             color: $sub-font-color;
@@ -197,16 +215,16 @@
     }
 
     .website-button {
-        font-size: em(20);
-        font-weight: $bold;
+        font-size: em(16);
+        font-weight: $regular;
 
         color: $sub-highlight-color;
 
-        padding: em(7, 20) em(12, 20);
+        padding: em(5, 16) em(15, 16);
 
         background-color: unset;
-        border: em(3, 20) solid $sub-highlight-color;
-        border-radius: em(8, 20);
+        border: em(2, 16) solid $sub-highlight-color;
+        border-radius: em(8, 16);
 
         transition: color .5s ease-out;
         transition: background-color .5s ease-out;

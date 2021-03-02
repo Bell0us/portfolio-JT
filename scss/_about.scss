@@ -40,7 +40,7 @@
         margin-bottom: em(40, 40);
 
         span {
-            font-weight: $bold;
+            font-weight: $regular;
             text-transform: uppercase;
 
             color: $main-highligh-color;
@@ -61,17 +61,17 @@
     }
 
     .learn-more-btn {
-        font-size: em(20);
-        font-weight: $bold;
+        font-size: em(18);
+        font-weight: $regular;
 
         color: $main-highligh-color;
 
-        padding: em(10, 20) em(20, 20);
+        padding: em(6, 18) em(18, 18);
 
 
         background-color: unset;
-        border: em(4, 20) solid $main-highligh-color;
-        border-radius: em(61, 20);
+        border: em(3.5, 18) solid $main-highligh-color;
+        border-radius: em(61, 18);
 
         transition: color .5s ease-out;
         transition: background-color .5s ease-out;
@@ -195,10 +195,10 @@
         text-align: right;
 
         padding-right: em(20, 45);
-        border-right: em(3, 50) solid $main-highligh-color;
+        border-right: em(3, 45) solid $main-highligh-color;
 
         span {
-            font-weight: $bold;
+            font-weight: $regular;
             text-transform: uppercase;
 
             color: $main-highligh-color;
@@ -216,18 +216,18 @@
     }
 
     .learn-more-btn {
-        font-size: em(25);
-        font-weight: $bold;
+        font-size: em(22);
+        font-weight: $regular;
 
         color: $main-highligh-color;
 
-        padding: em(10, 25) em(20, 25);
-        margin-bottom: em(30, 25);
+        padding: em(6, 22) em(18, 22);
+        margin-bottom: em(30, 22);
 
         background-color: unset;
 
-        border: em(5, 25) solid $main-highligh-color;
-        border-radius: em(61, 25);
+        border: em(3, 22) solid $main-highligh-color;
+        border-radius: em(61, 22);
 
         transition: color .5s ease-out;
         transition: background-color .5s ease-out;
