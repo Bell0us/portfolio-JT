@@ -67,6 +67,9 @@
         background-color: $form-imputs-color;
         border: none;
 
+
+        color: $main-font-color;
+
         &:focus {
             border: 1px solid $sub-highlight-color;
             box-shadow: none;
@@ -170,6 +173,8 @@
         font-size: em(55);
         font-weight: $light;
 
+        margin-left: em(30, 55);
+
         span {
             font-weight: $bold;
             text-transform: uppercase;
@@ -177,6 +182,7 @@
             color: $main-highligh-color;
         }
     }
+
 
     .form-container {
         border-right: em(2) solid $line-color;
@@ -186,7 +192,7 @@
 
         margin-right: em(5);
 
-        padding: em(30) em(40);
+        padding: em(20) em(40);
 
         //background-color: $cards-bg;
     }
@@ -194,14 +200,14 @@
 
     .main-contact,
     .diff-contact {
-        height: 90%;
+        height: 100%;
 
         display: flex;
         flex-flow: column wrap;
         align-items: center;
         justify-content: center;
 
-        padding: em(20) em(40);
+        padding: 0 em(40);
     }
 
 
@@ -212,7 +218,7 @@
         border-top-left-radius: em(8);
         border-bottom-left-radius: em(8);
 
-        padding-right: 0;
+        border-right: em(3) solid $sub-highlight-color;
     }
 
 
@@ -224,10 +230,9 @@
         border-bottom-right-radius: em(8);
     }
 
-    .form-row {
-        padding-right: em(40);
 
-        border-right: 10px solid $sub-highlight-color;
+    .heading-tyses {
+        margin-bottom: em(50);
     }
 
     .form-heading {
@@ -246,6 +251,11 @@
         background-color: $form-imputs-color;
         border: none;
 
+        font-size: em(20);
+        color: $main-font-color;
+
+        padding: em(10, 20) em(15, 20);
+
         &:focus {
             border: 1px solid $sub-highlight-color;
             box-shadow: none;
@@ -256,7 +266,7 @@
             color: $main-font-color;
             font-weight: $bold;
 
-            font-size: em(18);
+            font-size: em(20);
         }
     }
 
@@ -265,16 +275,16 @@
         border: unset;
         outline: unset;
 
-        font-size: em(20);
+        font-size: em(30);
         font-weight: $regular;
 
         color: $sub-highlight-color;
 
         margin: auto;
 
-        border: em(2, 20) solid $sub-highlight-color;
-        border-radius: em(30, 20);
-        padding: em(6, 20) em(18, 20);
+        border: em(3, 30) solid $sub-highlight-color;
+        border-radius: em(30, 30);
+        padding: em(6, 30) em(40, 30);
 
         transition: color .5s ease-out;
         transition: background-color .5s ease-out;
