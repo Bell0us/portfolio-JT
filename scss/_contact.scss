@@ -236,6 +236,30 @@
         }
     }
 
+    .diff-contact {
+        padding: 0;
+
+        display: block;
+    }
+
+    .diff-row {
+        height: 100%;
+    }
+
+    .map-holder {
+        width: 85%;
+        height: 40%;
+
+        margin: em(20) auto 0;
+
+        border-radius: em(5);
+        border: em(1) solid $sub-highlight-color;
+
+        background-image: url('../img/mapa-contact.svg');
+        background-size: cover;
+        background-position: center center;
+    }
+
     .personal {
         display: flex;
         flex-flow: column wrap;
@@ -244,22 +268,30 @@
 
         width: 100%;
 
-        font-size: em(17);
+        font-size: em(22);
 
-        margin-bottom: em(30, 17);
+        transition: all 350ms ease-in-out;
+
+        a:hover,
+        a:focus {
+            color: $main-font-color;
+            text-decoration: underline;
+        }
     }
 
     .socials {
         display: flex;
         flex-flow: row wrap;
-        justify-content: space-evenly;
+        justify-content: center;
         align-items: center;
 
         width: 100%;
 
         img {
-            width: 25px;
+            width: em(35);
             height: auto;
+
+            margin: 0 em(20);
         }
     }
 }
