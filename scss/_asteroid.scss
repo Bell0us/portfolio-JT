@@ -142,13 +142,18 @@
 
     .asteroid-0,
     .asteroid-2,
-    .asteroid-4,
-    .asteroid-7 {
+    .asteroid-4 {
         display: none;
     }
 
     .asteroid-3 {
         left: em(-30);
+    }
+
+    .asteroid-7 {
+        top: 367vh;
+        left: em(-50);
+        width: em(380);
     }
 
     .rocket {
@@ -157,7 +162,6 @@
     }
 
     .astronaut {
-        width: em(250);
-        top: 101%;
+        display: none;
     }
 }
