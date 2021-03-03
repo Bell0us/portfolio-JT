@@ -19,7 +19,7 @@
     border: em(2) solid $sub-highlight-color;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 991px) {
     .work-side-content {
         display: flex;
         flex-flow: column wrap;
@@ -54,7 +54,7 @@
         font-weight: $light;
 
         span {
-            font-weight: $bold;
+            font-weight: $regular;
             text-transform: uppercase;
 
             color: $main-highligh-color;
@@ -125,7 +125,31 @@
 
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 500px) {
+    .site-placeholder {
+        width: 80%;
+        height: 50%;
+    }
+}
+
+@media screen and (min-width: 650px) {
+    .work-heading {
+        font-size: em(40);
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .work-heading {
+        font-size: em(50);
+    }
+
+    .site-placeholder {
+        width: 70%;
+        height: 60%;
+    }
+}
+
+@media screen and (min-width: 992px) {
     .work-main-content {
         display: flex;
         flex-flow: column wrap;
@@ -146,7 +170,7 @@
         border-right: em(3, 55) solid $main-highligh-color;
 
         span {
-            font-weight: $bold;
+            font-weight: $regular;
             text-transform: uppercase;
 
             color: $main-highligh-color;
@@ -193,6 +217,11 @@
         height: 30%;
     }
 
+    .site-placeholder {
+        width: 100%;
+        height: 50%;
+    }
+
 
     .site-desc {
         font-size: em(40);
@@ -234,5 +263,59 @@
             background-color: $sub-highlight-color;
             color: $main-font-color;
         }
+    }
+}
+
+@media screen and (min-width: 1350px) {
+    .discover-button {
+        font-size: em(28);
+    }
+}
+
+@media screen and (min-width: 1500px) {
+    .work-heading {
+        font-size: em(65);
+    }
+
+    .site-desc {
+        font-size: em(50);
+
+        line-height: em(25, 50);
+
+        small {
+            font-size: em(20, 50);
+        }
+    }
+}
+
+@media screen and (min-width: 1650px) {
+    .site-placeholder {
+        width: 90%;
+        height: 45%;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 1900px) {
+    .work-heading {
+        font-size: em(75);
+    }
+
+    .discover-button {
+        font-size: em(32);
+    }
+
+    .site-desc {
+        font-size: em(60);
+
+        line-height: em(30, 60);
+
+        small {
+            font-size: em(30, 60);
+        }
+    }
+
+    .website-button {
+        font-size: em(22);
     }
 }

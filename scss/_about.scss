@@ -25,12 +25,9 @@
 *
 */
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 991px) {
 
-    // Heading
-    .heading-container {
-        height: 50%;
-    }
+    // Heading   
 
     .about-heading {
         font-size: em(40);
@@ -172,12 +169,27 @@
     }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 450px) {
+    .about-heading {
+        font-size: em(30);
+        font-weight: $light;
 
-    // Heading
-    .heading-container {
-        height: 30%;
+        margin-top: em(50, 20);
+        margin-bottom: em(40, 20);
+
+        span {
+            font-weight: $regular;
+            text-transform: uppercase;
+
+            color: $main-highligh-color;
+        }
     }
+}
+
+
+@media screen and (min-width: 992px) {
+
+    // Heading    
 
     .about-heading-holder {
         border-right: em(2) solid $line-color;

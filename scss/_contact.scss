@@ -2,51 +2,43 @@
     height: 100vh;
 }
 
-.contact-content {
-    text-align: center;
-}
-
-@media screen and (max-width: 768px) {
-    .side-holder {
-        height: 0;
-    }
-
-    .main-contact {
-        padding-bottom: em(20);
-
-        border-bottom: em(2) solid $sub-highlight-color;
-    }
-
-    .contact-heading-holder {
-        height: 100%;
+@media screen and (max-width: 991px) {
+    .contact-heading-container {
+        height: 40%;
 
         display: flex;
         flex-flow: column wrap;
-        justify-content: flex-end;
+        justify-content: center;
         align-items: center;
+    }
+
+
+    .form-container {
+        height: 60%;
     }
 
     .contact-heading {
         font-size: em(35);
         font-weight: $light;
 
-        margin-bottom: em(40, 35);
+        margin-top: em(40, 35);
 
         span {
-            font-weight: $bold;
+            font-weight: $regular;
             text-transform: uppercase;
 
             color: $main-highligh-color;
         }
     }
 
-    .form-container {
+    .main-contact {
         background-color: $cards-bg;
 
-        width: 95%;
+        width: 90%;
 
-        padding: em(20) em(20);
         margin: 0 auto;
+
+        padding-top: em(20);
 
         border-radius: em(6);
     }
@@ -94,11 +86,11 @@
 
         color: $sub-highlight-color;
 
-        margin: auto;
+        margin-top: em(20, 16);
 
         border: em(2, 16) solid $sub-highlight-color;
         border-radius: em(30, 16);
-        padding: em(6, 16) em(18, 16);
+        padding: em(6, 16) em(22, 16);
 
         transition: color .5s ease-out;
         transition: background-color .5s ease-out;
@@ -111,53 +103,31 @@
     }
 
 
-    // Diff contact
     .diff-contact {
-        display: flex;
-        flex-flow: column wrap;
-        justify-content: space-evenly;
-        align-items: center;
-    }
-
-    .map {
         display: none;
-    }
-
-    .personal {
-        display: flex;
-        flex-flow: column wrap;
-        justify-content: space-evenly;
-        align-items: center;
-
-        width: 100%;
-
-        font-size: em(17);
-
-        margin-bottom: em(30, 17);
-    }
-
-    .socials {
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: space-evenly;
-        align-items: center;
-
-        width: 100%;
-
-        img {
-            width: 25px;
-            height: auto;
-        }
     }
 }
 
+
+
+
+
 @media screen and (min-width: 768px) {
-    .side-holder {
+
+    .contact-heading-container,
+    .form-container {
         border-right: em(2) solid $line-color;
     }
 
-    .contact-heading-container {
-        padding-right: em(20);
+    .form-container {
+        height: 70%;
+
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+
+        text-align: center;
     }
 
     .contact-heading-holder {
@@ -165,18 +135,15 @@
         flex-flow: column wrap;
         justify-content: flex-end;
         align-items: flex-start;
-
-        text-align: left;
     }
 
     .contact-heading {
         font-size: em(55);
         font-weight: $light;
-
-        margin-left: em(30, 55);
+        margin: auto;
 
         span {
-            font-weight: $bold;
+            font-weight: $regular;
             text-transform: uppercase;
 
             color: $main-highligh-color;
@@ -184,59 +151,33 @@
     }
 
 
-    .form-container {
-        border-right: em(2) solid $line-color;
+    .main-contact,
+    .diff-contact {
+        background-color: $cards-bg;
 
-        width: 100%;
-        height: 70%;
-
-        margin-right: em(5);
+        height: 80%;
 
         padding: em(20) em(40);
 
-        //background-color: $cards-bg;
-    }
-
-
-    .main-contact,
-    .diff-contact {
-        height: 100%;
-
         display: flex;
         flex-flow: column wrap;
-        align-items: center;
         justify-content: center;
-
-        padding: 0 em(40);
+        align-items: center;
     }
-
 
     .main-contact {
-        width: 60%;
-        background-color: $cards-bg;
-
-        border-top-left-radius: em(8);
-        border-bottom-left-radius: em(8);
-
-        border-right: em(3) solid $sub-highlight-color;
+        border-top-left-radius: em(5);
+        border-bottom-left-radius: em(5);
     }
-
 
     .diff-contact {
-        width: 40%;
-        background-color: $cards-bg;
-
-        border-top-right-radius: em(8);
-        border-bottom-right-radius: em(8);
+        border-top-right-radius: em(5);
+        border-bottom-right-radius: em(5);
     }
 
-
-    .heading-tyses {
-        margin-bottom: em(50);
-    }
 
     .form-heading {
-        font-size: em(45);
+        font-size: em(30);
         font-weight: $bold;
 
         text-transform: uppercase;
@@ -251,10 +192,10 @@
         background-color: $form-imputs-color;
         border: none;
 
-        font-size: em(20);
+        font-size: em(16);
         color: $main-font-color;
 
-        padding: em(10, 20) em(15, 20);
+        padding: em(5, 16) em(8, 16);
 
         &:focus {
             border: 1px solid $sub-highlight-color;
@@ -266,7 +207,7 @@
             color: $main-font-color;
             font-weight: $bold;
 
-            font-size: em(20);
+            font-size: em(16);
         }
     }
 
@@ -275,16 +216,16 @@
         border: unset;
         outline: unset;
 
-        font-size: em(30);
+        font-size: em(16);
         font-weight: $regular;
 
         color: $sub-highlight-color;
 
         margin: auto;
 
-        border: em(3, 30) solid $sub-highlight-color;
-        border-radius: em(30, 30);
-        padding: em(6, 30) em(40, 30);
+        border: em(3, 16) solid $sub-highlight-color;
+        border-radius: em(30, 16);
+        padding: em(6, 16) em(40, 16);
 
         transition: color .5s ease-out;
         transition: background-color .5s ease-out;

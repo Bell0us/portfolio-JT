@@ -24,7 +24,10 @@ body {
 }
 
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 991px) {
+    body {
+        font-size: em(16);
+    }
 
     .main-content {
         border-right: em(2) solid $line-color;
@@ -44,7 +47,29 @@ body {
     }
 
     .big-content {
-        padding-right: em(31.7);
+        padding-right: em(31.5);
     }
 
+    .heading-container {
+        height: 30%;
+    }
+
+}
+
+@media screen and (max-width: 991px) {
+    .heading-container {
+        height: 50%;
+    }
+}
+
+@media screen and (max-width: 370px) {
+    body {
+        font-size: em(14);
+    }
+}
+
+@media screen and (min-width: 500px) {
+    body {
+        font-size: em(17);
+    }
 }

@@ -25,7 +25,9 @@
 *
 */
 
-@media screen and (max-width: 768px) {
+
+
+@media screen and (max-width: 991px) {
     .content {
         height: 92vh;
 
@@ -52,7 +54,7 @@
         transform: translateY(50px);
 
         span {
-            font-weight: $bold;
+            font-weight: $regular;
             text-transform: uppercase;
 
             color: $main-highligh-color;
@@ -97,7 +99,13 @@
     }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 600px) {
+    .home-heading {
+        font-size: em(45);
+    }
+}
+
+@media screen and (min-width: 992px) {
     .home-main-content {
         padding: 0;
 
@@ -110,7 +118,7 @@
     }
 
     .home-heading {
-        font-size: em(50);
+        font-size: em(40);
         font-weight: $light;
 
         padding-right: em(25, 50);
@@ -118,7 +126,7 @@
         border-right: em(3, 50) solid $main-highligh-color;
 
         span {
-            font-weight: $bold;
+            font-weight: $regular;
             text-transform: uppercase;
 
             color: $main-highligh-color;
@@ -126,15 +134,15 @@
     }
 
     .introduction {
-        font-size: em(40);
+        font-size: em(25);
         font-weight: $regular;
 
-        line-height: em(30, 35);
+        line-height: em(30, 25);
 
-        padding-right: em(25, 40);
+        padding-right: em(25, 25);
 
         small {
-            font-size: em(22, 35);
+            font-size: em(16, 25);
             font-weight: $light;
 
             color: $sub-font-color;
@@ -160,6 +168,64 @@
         font-weight: $light;
 
         letter-spacing: em(4, 25);
+
+        transform: rotate(90deg);
+    }
+}
+
+@media screen and (min-width: 1100px) {
+    .home-heading {
+        font-size: em(45);
+    }
+
+    .introduction {
+        font-size: em(30);
+
+        small {
+            font-size: em(20, 30);
+        }
+    }
+}
+
+@media screen and (min-width: 1350px) {
+    .home-heading {
+        font-size: em(55);
+    }
+
+    .introduction {
+        font-size: em(40);
+
+        small {
+            font-size: em(24, 40);
+        }
+    }
+}
+
+@media screen and (min-width: 1800px) {
+    .home-heading {
+        font-size: em(70);
+    }
+
+    .introduction {
+        font-size: em(50);
+
+        small {
+            font-size: em(28, 50);
+        }
+    }
+
+    .scroll-badge {
+        width: 55px;
+        height: auto;
+
+        margin-bottom: em(120);
+    }
+
+    .scroll-text {
+        font-size: em(30);
+        font-weight: $light;
+
+        letter-spacing: em(4, 30);
 
         transform: rotate(90deg);
     }
