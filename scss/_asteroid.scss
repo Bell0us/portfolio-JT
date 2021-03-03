@@ -121,22 +121,9 @@
     width: em(400);
     height: auto;
 
-    opacity: .8;
+    opacity: .5;
 }
 
-.astronaut {
-    position: absolute;
-    z-index: -1;
-
-    top: 370vh;
-    right: 10%;
-
-    transform: translateX(-70%);
-    transform: rotateZ(-15deg);
-
-    width: em(330);
-    height: auto;
-}
 
 @media screen and (max-width: 991px) {
 
@@ -159,9 +146,5 @@
     .rocket {
         left: em(-160);
         top: 62%;
-    }
-
-    .astronaut {
-        display: none;
     }
 }
