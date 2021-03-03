@@ -186,6 +186,18 @@
     }
 }
 
+@media screen and (min-width: 630px) {
+    .card {
+        width: em(400);
+    }
+}
+
+@media screen and (min-width: 750px) {
+    .about-heading {
+        font-size: em(45);
+    }
+}
+
 
 @media screen and (min-width: 992px) {
 
@@ -201,13 +213,13 @@
     }
 
     .about-heading {
-        font-size: em(45);
+        font-size: em(38);
         font-weight: $light;
 
         text-align: right;
 
-        padding-right: em(20, 45);
-        border-right: em(3, 45) solid $main-highligh-color;
+        padding-right: em(20, 38);
+        border-right: em(3, 38) solid $main-highligh-color;
 
         span {
             font-weight: $regular;
@@ -264,33 +276,78 @@
 
         text-align: center;
 
+        width: auto;
+
         margin: 0 auto;
 
         padding: em(30) em(20);
 
-        height: em(350);
+        height: em(300);
 
         border-radius: em(6);
     }
 
     .card-title {
-        font-size: em(30);
+        font-size: em(25);
         font-weight: $bold;
 
         color: $sub-highlight-color;
 
-        margin-bottom: em(30, 30);
-        padding-bottom: em(15, 30);
+        margin-bottom: em(30, 25);
+        padding-bottom: em(15, 25);
 
-        border-bottom: em(1, 30) solid $sub-font-color;
+        border-bottom: em(1, 25) solid $sub-font-color;
     }
 
     .card-desc {
-        font-size: em(15);
+        font-size: em(12);
         font-weight: $light;
 
         color: $sub-font-color;
 
-        padding: 0 em(15, 15);
+        padding: 0 em(5, 12);
+    }
+}
+
+@media screen and (min-width: 1270px) {
+    .about-heading {
+        font-size: em(50);
+    }
+
+    .card-title {
+        font-size: em(30);
+    }
+
+    .card-desc {
+        font-size: em(16);
+    }
+}
+
+@media screen and (min-width: 1500px) {
+    .card {
+        width: em(350);
+    }
+}
+
+@media screen and (min-width: 1730px) {
+    .about-heading {
+        font-size: em(60);
+    }
+
+    .learn-more-btn {
+        font-size: em(28);
+    }
+
+    .card-title {
+        font-size: em(34);
+    }
+
+    .card-desc {
+        font-size: em(20);
+    }
+
+    .card {
+        width: em(400);
+        height: em(350);
     }
 }

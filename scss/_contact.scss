@@ -1,5 +1,6 @@
 #contact {
     height: 100vh;
+    overflow: hidden;
 }
 
 @media screen and (max-width: 991px) {
@@ -32,7 +33,7 @@
     }
 
     .main-contact {
-        background-color: $cards-bg;
+        background-color: rgba($cards-bg, .7);
 
         width: 90%;
 
@@ -56,7 +57,7 @@
     #email,
     #subject,
     #message {
-        background-color: $form-imputs-color;
+        background-color: lighten($cards-bg, 10%);
         border: none;
 
 
@@ -112,7 +113,7 @@
 
 
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 992px) {
 
     .contact-heading-container,
     .form-container {
@@ -142,6 +143,11 @@
         font-weight: $light;
         margin: auto;
 
+        padding-left: em(30, 55);
+        padding-bottom: em(10, 55);
+
+        border-left: em(3, 55) solid $main-highligh-color;
+
         span {
             font-weight: $regular;
             text-transform: uppercase;
@@ -153,9 +159,13 @@
 
     .main-contact,
     .diff-contact {
-        background-color: $cards-bg;
+        background-color: rgba($cards-bg, .4);
 
         height: 80%;
+
+        margin: 0 auto;
+
+        border-radius: em(6);
 
         padding: em(20) em(40);
 
@@ -164,17 +174,6 @@
         justify-content: center;
         align-items: center;
     }
-
-    .main-contact {
-        border-top-left-radius: em(5);
-        border-bottom-left-radius: em(5);
-    }
-
-    .diff-contact {
-        border-top-right-radius: em(5);
-        border-bottom-right-radius: em(5);
-    }
-
 
     .form-heading {
         font-size: em(30);
@@ -189,13 +188,13 @@
     #email,
     #subject,
     #message {
-        background-color: $form-imputs-color;
+        background-color: lighten($cards-bg, 10%);
         border: none;
 
         font-size: em(16);
         color: $main-font-color;
 
-        padding: em(5, 16) em(8, 16);
+        padding: em(6, 16) em(10, 16);
 
         &:focus {
             border: 1px solid $sub-highlight-color;
@@ -205,9 +204,9 @@
 
         &::placeholder {
             color: $main-font-color;
-            font-weight: $bold;
+            font-weight: $regular;
 
-            font-size: em(16);
+            font-size: em(14);
         }
     }
 
@@ -235,13 +234,6 @@
             background-color: $sub-highlight-color;
             color: $main-font-color;
         }
-    }
-
-    .map {
-        width: 90%;
-        height: auto;
-
-        margin-bottom: em(80);
     }
 
     .personal {
