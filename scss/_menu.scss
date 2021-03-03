@@ -69,17 +69,17 @@
         }
     }
 
-    .ham {
+    .menu-badge {
         cursor: pointer;
         transition: transform 400ms;
         user-select: none;
     }
 
-    .hamRotate.active {
+    .menuRotate.active {
         transform: rotate(45deg);
     }
 
-    .hamRotate180.active {
+    .menuRotate180.active {
         transform: rotate(180deg);
     }
 
@@ -91,19 +91,19 @@
         stroke-linecap: round;
     }
 
-    .ham1 .top {
+    .menu-badge .top {
         stroke-dasharray: 40 139;
     }
 
-    .ham1 .bottom {
+    .menu-badge .bottom {
         stroke-dasharray: 40 180;
     }
 
-    .ham1.active .top {
+    .menu-badge.active .top {
         stroke-dashoffset: -98px;
     }
 
-    .ham1.active .bottom {
+    .menu-badge.active .bottom {
         stroke-dashoffset: -138px;
     }
 }
@@ -141,8 +141,7 @@
         padding-right: em(15, 35);
         border-right: em(2, 35) solid $line-color;
 
-        &:hover,
-        &:focus {
+        &:hover {
             border-right: em(3, 35) solid $main-highligh-color;
         }
 
