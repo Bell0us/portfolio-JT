@@ -1,56 +1,162 @@
-.asteroid-1 {
-    width: 15%;
+.asteroid-0 {
+    width: em(300);
     height: auto;
 
     position: absolute;
     z-index: -5;
-    top: 30%;
-    left: 60%;
+    top: 2%;
+    left: 10%;
+
+    //animation: asteroidOne 20s infinite;
+}
+
+.asteroid-1 {
+    width: em(500);
+    height: auto;
+
+    position: absolute;
+    z-index: -5;
+    top: 10%;
+    right: 2%;
 
     //animation: asteroidOne 20s infinite;
 }
 
 .asteroid-2 {
-    width: 12%;
+    width: em(350);
     height: auto;
 
     transform: rotate(27%);
 
     position: absolute;
     z-index: -5;
-    bottom: 10%;
-    left: 25%;
+    top: 20%;
+    left: 15%;
 
     //animation: asteroidTwo 20s infinite;
 }
 
-/* @keyframes asteroidOne {
-    0% {
-        transform: translatey(0px);
-    }
+.asteroid-3 {
+    width: em(400);
+    height: auto;
 
-    50% {
-        transform: translatey(-70px);
-    }
+    transform: rotate(43%);
 
-    100% {
-        transform: translatey(0px);
-    }
+    position: absolute;
+    z-index: -2;
+    top: 40%;
+    right: 5%;
+
+    //animation: asteroidTwo 20s infinite;
 }
 
-@keyframes asteroidTwo {
-    0% {
-        transform: translatey(0px);
-        transform: translatex(0px);
-    }
+.asteroid-4 {
+    width: em(300);
+    height: auto;
 
-    50% {
-        transform: translatey(-70px);
-        transform: translatex(-70px);
-    }
+    transform: rotate(150%);
 
-    100% {
-        transform: translatey(0px);
-        transform: translatex(0px);
-    }
+    position: absolute;
+    z-index: -5;
+    top: 65%;
+    left: 28%;
+
+    //animation: asteroidTwo 20s infinite;
+}
+
+/* 
+.asteroid-5 {
+    width: em(450);
+    height: auto;
+
+    transform: rotate(60%);
+
+    position: absolute;
+    z-index: -5;
+    top: 200%;
+    left: 60%;
+
+    //animation: asteroidTwo 20s infinite;
+}
+
+.asteroid-6 {
+    width: em(300);
+    height: auto;
+
+    transform: rotate(268%);
+
+    position: absolute;
+    z-index: -3;
+    top: 270%;
+    left: 20%;
+
+    //animation: asteroidTwo 20s infinite;
 } */
+
+.asteroid-7 {
+    width: em(500);
+    height: auto;
+
+    transform: rotate(39%);
+
+    position: absolute;
+    z-index: -2;
+    top: 80%;
+    left: 15%;
+
+    //animation: asteroidTwo 20s infinite;
+}
+
+
+.rocket {
+    position: absolute;
+    z-index: -1;
+
+    top: 35%;
+    right: 20%;
+
+    transform: translateX(-70%);
+    transform: rotateZ(-15deg);
+
+    width: em(400);
+    height: auto;
+
+    opacity: .8;
+}
+
+.astronaut {
+    position: absolute;
+    z-index: -1;
+
+    top: 91%;
+    right: 10%;
+
+    transform: translateX(-70%);
+    transform: rotateZ(-15deg);
+
+    width: em(330);
+    height: auto;
+}
+
+@media screen and (max-width: 991px) {
+
+    .asteroid-0,
+    .asteroid-2,
+    .asteroid-4,
+    .asteroid-7 {
+        display: none;
+    }
+
+    .asteroid-3 {
+        left: em(-30);
+    }
+
+    .rocket {
+        left: em(-150);
+    }
+
+    .astronaut {
+        width: em(250);
+        top: 103%;
+    }
+}
