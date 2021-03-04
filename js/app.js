@@ -55,6 +55,8 @@ const workLinkMobile = document.querySelector('.work');
 const aboutLinkMobile = document.querySelector('.about');
 const hireLinkMobile = document.querySelector('.contact');
 
+const menuButtonContact = document.querySelector('.menu-button-contact');
+
 
 menuBadge.addEventListener('click', () => {
     console.log('yay');
@@ -77,6 +79,11 @@ aboutLinkMobile.addEventListener('click', () => {
 });
 
 hireLinkMobile.addEventListener('click', () => {
+    overlay.classList.remove('open');
+    menuBadge.classList.remove('active');
+});
+
+menuButtonContact.addEventListener('click', () => {
     overlay.classList.remove('open');
     menuBadge.classList.remove('active');
 });
