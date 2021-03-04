@@ -1,3 +1,9 @@
+/*
+*
+* Mains
+*
+*/
+
 * {
     box-sizing: border-box;
 }
@@ -25,6 +31,12 @@ body {
     }
 }
 
+
+/*
+*
+* Secondary
+*
+*/
 
 @media screen and (min-width: 991px) {
     body {
@@ -63,6 +75,13 @@ body {
         height: 50%;
     }
 }
+
+
+/*
+*
+* Font sizes
+*
+*/
 
 @media screen and (max-width: 370px) {
     body {

@@ -1,9 +1,24 @@
+/*
+*
+* Generals
+*
+*/
+
+
 #contact {
     height: 100vh;
     overflow: hidden;
 }
 
+/*
+*
+* Media queries
+*
+*/
+
 @media screen and (max-width: 991px) {
+
+    // Heading
     .contact-heading-container {
         height: 40%;
 
@@ -11,11 +26,6 @@
         flex-flow: column wrap;
         justify-content: center;
         align-items: center;
-    }
-
-
-    .form-container {
-        height: 60%;
     }
 
     .contact-heading {
@@ -30,6 +40,11 @@
 
             color: $main-highligh-color;
         }
+    }
+
+    // Form
+    .form-container {
+        height: 60%;
     }
 
     .main-contact {
@@ -103,7 +118,7 @@
         }
     }
 
-
+    // Different type of contact
     .diff-contact {
         display: none;
     }
@@ -119,22 +134,13 @@
 
 @media screen and (min-width: 992px) {
 
+    // Generals
     .contact-heading-container,
     .form-container {
         border-right: em(2) solid $line-color;
     }
 
-    .form-container {
-        height: 70%;
-
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: center;
-        align-items: center;
-
-        text-align: center;
-    }
-
+    // Heading
     .contact-heading-holder {
         display: flex;
         flex-flow: column wrap;
@@ -160,6 +166,17 @@
         }
     }
 
+    // Form
+    .form-container {
+        height: 70%;
+
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+
+        text-align: center;
+    }
 
     .main-contact,
     .diff-contact {
@@ -240,6 +257,8 @@
         }
     }
 
+
+    // Different type of contact
     .diff-contact {
         padding: 0;
 

@@ -55,6 +55,7 @@
     }
 
     // Button
+
     .button-holder {
         display: flex;
         justify-content: center;
@@ -142,6 +143,7 @@
     }
 
     // Switchers
+
     .switchers {
         display: flex;
         flex-flow: row wrap;
@@ -172,6 +174,9 @@
 }
 
 @media screen and (max-width: 450px) {
+
+    //Heading
+
     .about-heading {
         font-size: em(30);
         font-weight: $light;

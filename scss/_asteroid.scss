@@ -1,3 +1,9 @@
+/*
+*
+* Asteroids
+*
+*/
+
 .asteroid-0 {
     width: em(300);
     height: auto;
@@ -108,6 +114,12 @@
 }
 
 
+/*
+*
+* Rocket
+*
+*/
+
 .rocket {
     position: absolute;
     z-index: -1;
@@ -124,6 +136,12 @@
     opacity: .5;
 }
 
+
+/*
+*
+* BG things for mobile
+*
+*/
 
 @media screen and (max-width: 991px) {
 
