@@ -18,8 +18,15 @@
     display: none;
 }
 
+.logo:hover,
+.logo:focus {
+    .logo-rect {
+        transition: all 0.1s ease-in-out;
 
-
+        transform-origin: center;
+        transform: scale(1.035);
+    }
+}
 
 @media screen and (max-width: 991px) {
     .nav-container {
@@ -45,8 +52,10 @@
     }
 
     .logo {
-        width: 60px;
+        width: 75px;
         height: auto;
+
+        cursor: pointer;
     }
 
     .nav-mobile {
@@ -190,8 +199,10 @@
     }
 
     .logo {
-        width: 110px;
+        width: 180px;
         height: auto;
+
+        cursor: pointer;
     }
 
     .navigation {

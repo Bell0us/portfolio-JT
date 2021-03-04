@@ -6,6 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- Favicons-->
+    <link rel="apple-touch-icon" sizes="180x180" href="fav/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="fav/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="fav/favicon-16x16.png">
+    <link rel="manifest" href="fav/site.webmanifest">
+
+
     <!--    
         *
         * Style sheets
@@ -33,7 +40,7 @@
     <img src="img/asteroid1.svg" alt="asteroid1" class="asteroid-1 rellax" data-rellax-speed="-2">
     <img src="img/asteroid1.svg" alt="asteroid2" class="asteroid-2 rellax" data-rellax-speed="4">
     <img src="img/asteroid1.svg" alt="asteroid3" class="asteroid-3 rellax" data-rellax-speed="-1">
-    <img src="img/asteroid1.svg" alt="asteroid4" class="asteroid-4 rellax" data-rellax-speed="2">
+    <img src="img/astronaut.svg" alt="astronaut" class="astronaut rellax" data-rellax-speed="2">
     <img src="img/asteroid1.svg" alt="asteroid7" class="asteroid-7 rellax" data-rellax-speed="2.3">
 
     <div class="intro">
@@ -72,7 +79,22 @@
         <div class="row landing" id="landing">
             <div class="col-lg-2 menu menu-holder">
                 <div class="nav-container">
-                    <a class="logo" href="index.html"><img src="img/logo-white-neon.svg" alt="logo-white-neon"></a>
+                    <a href="index.html">
+                        <svg class="logo" width="393" height="352" viewBox="0 0 393 352" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <mask id="path-1-inside-1" fill="white">
+                                <rect class="logo-rect" x="57" y="37" width="278" height="278" rx="7" />
+                            </mask>
+                            <rect x="57" y="37" width="278" height="278" rx="7" stroke="white" stroke-width="30"
+                                mask="url(#path-1-inside-1)" />
+                            <path
+                                d="M233.653 88.25V213.5C233.653 229 228.903 241.25 219.403 250.25C210.069 259.25 197.736 263.75 182.403 263.75C167.069 263.75 154.653 259.25 145.153 250.25C135.819 241.25 131.153 229 131.153 213.5H159.903C160.069 221.167 161.986 227.25 165.653 231.75C169.486 236.25 175.069 238.5 182.403 238.5C189.736 238.5 195.319 236.25 199.153 231.75C202.986 227.083 204.903 221 204.903 213.5V88.25H233.653Z"
+                                fill="white" />
+                            <path
+                                d="M244.653 91.25V216.5C244.653 232 239.903 244.25 230.403 253.25C221.069 262.25 208.736 266.75 193.403 266.75C178.069 266.75 165.653 262.25 156.153 253.25C146.819 244.25 142.153 232 142.153 216.5H170.903C171.069 224.167 172.986 230.25 176.653 234.75C180.486 239.25 186.069 241.5 193.403 241.5C200.736 241.5 206.319 239.25 210.153 234.75C213.986 230.083 215.903 224 215.903 216.5V91.25H244.653Z"
+                                fill="#00FF66" />
+                        </svg>
+                    </a>
                     <ul class="navigation">
                         <li class="nav-links active home"><a href="#landing">home</a></li>
                         <li class="nav-links work"><a href="#work">work</a></li>
