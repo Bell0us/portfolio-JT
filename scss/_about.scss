@@ -18,6 +18,10 @@
     position: static;
 }
 
+.none {
+    display: none;
+}
+
 
 /*
 *
@@ -92,8 +96,6 @@
         left: 50%;
 
         transform: translateX(-50%);
-
-        transition: all .5s ease-in-out;
     }
 
     .card {
@@ -131,12 +133,12 @@
     }
 
     .ui-card-col {
-        opacity: 1;
+        z-index: 1;
     }
 
     .frontend-card-col,
     .logo-card-col {
-        opacity: 0;
+        z-index: 0;
     }
 
     // Switchers

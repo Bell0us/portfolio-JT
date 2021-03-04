@@ -59,7 +59,6 @@ const menuButtonContact = document.querySelector('.menu-button-contact');
 
 
 menuBadge.addEventListener('click', () => {
-    console.log('yay');
     overlay.classList.toggle('open');
 });
 
@@ -103,14 +102,72 @@ const uiSwitch = document.querySelector('.UI-switch')
 const frontEndSwitch = document.querySelector('.frontend-switch')
 const logoSwitch = document.querySelector('.logo-switch')
 
+
+/*
+ *
+ * Swiperino
+ *
+ */
+
+// Swipe left
+
+uiCard.addEventListener('swiped-left', function (e) {
+    uiSwitch.classList.remove('switch-active')
+    frontEndSwitch.classList.add('switch-active')
+    logoSwitch.classList.remove('switch-active');
+
+    uiCard.style.zIndex = "0";
+    frontEndCard.style.zIndex = "1";
+    logoCard.style.zIndex = "0";
+});
+
+frontEndCard.addEventListener('swiped-left', function (e) {
+    uiSwitch.classList.remove('switch-active')
+    frontEndSwitch.classList.remove('switch-active')
+    logoSwitch.classList.add('switch-active');
+
+    uiCard.style.zIndex = "0";
+    frontEndCard.style.zIndex = "0";
+    logoCard.style.zIndex = "1";
+});
+
+//swipe right
+
+frontEndCard.addEventListener('swiped-right', function (e) {
+    uiSwitch.classList.add('switch-active');
+    frontEndSwitch.classList.remove('switch-active');
+    logoSwitch.classList.remove('switch-active');
+
+    uiCard.style.zIndex = "1";
+    frontEndCard.style.zIndex = "0";
+    logoCard.style.zIndex = "0";
+});
+
+logoCard.addEventListener('swiped-right', function (e) {
+    uiSwitch.classList.remove('switch-active')
+    frontEndSwitch.classList.add('switch-active')
+    logoSwitch.classList.remove('switch-active');
+
+    uiCard.style.zIndex = "0";
+    frontEndCard.style.zIndex = "1";
+    logoCard.style.zIndex = "0";
+});
+
+
+/*
+ *
+ * Switches
+ *
+ */
+
 uiSwitch.addEventListener('click', () => {
     uiSwitch.classList.add('switch-active');
     frontEndSwitch.classList.remove('switch-active');
     logoSwitch.classList.remove('switch-active');
 
-    uiCard.style.opacity = "1";
-    frontEndCard.style.opacity = "0";
-    logoCard.style.opacity = "0";
+    uiCard.style.zIndex = "1";
+    frontEndCard.style.zIndex = "0";
+    logoCard.style.zIndex = "0";
 });
 
 frontEndSwitch.addEventListener('click', () => {
@@ -118,9 +175,9 @@ frontEndSwitch.addEventListener('click', () => {
     frontEndSwitch.classList.add('switch-active')
     logoSwitch.classList.remove('switch-active');
 
-    uiCard.style.opacity = "0";
-    frontEndCard.style.opacity = "1";
-    logoCard.style.opacity = "0";
+    uiCard.style.zIndex = "0";
+    frontEndCard.style.zIndex = "1";
+    logoCard.style.zIndex = "0";
 });
 
 logoSwitch.addEventListener('click', () => {
@@ -128,19 +185,22 @@ logoSwitch.addEventListener('click', () => {
     frontEndSwitch.classList.remove('switch-active')
     logoSwitch.classList.add('switch-active');
 
-    uiCard.style.opacity = "0";
-    frontEndCard.style.opacity = "0";
-    logoCard.style.opacity = "1";
+    uiCard.style.zIndex = "0";
+    frontEndCard.style.zIndex = "0";
+    logoCard.style.zIndex = "1";
 })
 
 
-const tl = gsap.timeline();
+
+
 
 /*
  *
  * Loading page animations
  *
  */
+
+const tl = gsap.timeline();
 
 tl.to('.intro-logo', {
         y: '0%',
