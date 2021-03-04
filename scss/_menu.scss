@@ -128,12 +128,12 @@
 
         z-index: 9;
 
-        clip-path: circle(100px at 100% -30%);
+        clip-path: circle(30px at 130% -30%);
         transition: all 1s ease-out;
     }
 
     .open {
-        clip-path: circle(1500px at 100% -30%);
+        clip-path: circle(1500px at 130% -30%);
 
         pointer-events: all;
     }
