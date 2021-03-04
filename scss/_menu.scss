@@ -14,6 +14,10 @@
     display: none;
 }
 
+.overlay {
+    display: none;
+}
+
 
 
 
@@ -108,6 +112,55 @@
     .menu-badge.active .bottom {
         stroke-dashoffset: -138px;
     }
+
+    .overlay {
+        display: flex;
+
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+
+        position: fixed;
+        width: 100%;
+        height: 100%;
+
+        background-image: linear-gradient(to bottom, #444349, #424351, #3c4359, #304561, #1b4769);
+
+        z-index: 9;
+
+        clip-path: circle(100px at 100% -30%);
+        transition: all 1s ease-out;
+    }
+
+    .open {
+        clip-path: circle(1500px at 100% -30%);
+
+        pointer-events: all;
+    }
+
+    .overlay-menu {
+        height: 40%;
+
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: space-evenly;
+        align-items: center;
+
+    }
+
+    .overlay-menu-links {
+        font-size: em(45);
+        font-weight: $light;
+
+        text-transform: uppercase;
+
+        a:hover,
+        a:focus {
+            color: $main-font-color;
+
+            text-decoration: line-through;
+        }
+    }
 }
 
 @media screen and (min-width: 992px) {
@@ -142,6 +195,8 @@
         padding: em(15, 35) 0;
         padding-right: em(15, 35);
         border-right: em(2, 35) solid $line-color;
+
+        transition: border-right 200ms ease-in-out;
 
         &:hover {
             border-right: em(3, 35) solid $main-highligh-color;

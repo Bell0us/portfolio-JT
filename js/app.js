@@ -44,6 +44,46 @@ $(window).scroll(function () {
 
 /*
  *
+ * POP UP menu
+ *
+ */
+
+const menuBadge = document.querySelector('.menu-badge');
+const overlay = document.querySelector('.overlay');
+const homeLinkMobile = document.querySelector('.home');
+const workLinkMobile = document.querySelector('.work');
+const aboutLinkMobile = document.querySelector('.about');
+const hireLinkMobile = document.querySelector('.contact');
+
+
+menuBadge.addEventListener('click', () => {
+    console.log('yay');
+    overlay.classList.toggle('open');
+});
+
+homeLinkMobile.addEventListener('click', () => {
+    overlay.classList.remove('open');
+    menuBadge.classList.remove('active');
+});
+
+workLinkMobile.addEventListener('click', () => {
+    overlay.classList.remove('open');
+    menuBadge.classList.remove('active');
+});
+
+aboutLinkMobile.addEventListener('click', () => {
+    overlay.classList.remove('open');
+    menuBadge.classList.remove('active');
+});
+
+hireLinkMobile.addEventListener('click', () => {
+    overlay.classList.remove('open');
+    menuBadge.classList.remove('active');
+});
+
+
+/*
+ *
  * Cards switcherino
  *
  */

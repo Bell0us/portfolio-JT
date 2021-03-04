@@ -75,3 +75,30 @@ body {
         font-size: em(17);
     }
 }
+
+/*
+*
+* Scroll bar
+*
+*/
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: lighten($bg-color, 10%);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: $main-highligh-color;
+    border-radius: em(40);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: darken($main-highligh-color, 8%);
+}

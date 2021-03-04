@@ -109,7 +109,11 @@
     }
 }
 
-
+@media screen and (min-width: 720px) {
+    .main-contact {
+        width: em(500);
+    }
+}
 
 
 
@@ -139,14 +143,14 @@
     }
 
     .contact-heading {
-        font-size: em(55);
+        font-size: em(35);
         font-weight: $light;
         margin: auto;
 
-        padding-left: em(30, 55);
-        padding-bottom: em(10, 55);
+        padding-left: em(30, 35);
+        padding-bottom: em(10, 35);
 
-        border-left: em(3, 55) solid $main-highligh-color;
+        border-left: em(3, 35) solid $main-highligh-color;
 
         span {
             font-weight: $regular;
@@ -268,7 +272,7 @@
 
         width: 100%;
 
-        font-size: em(22);
+        font-size: em(15);
 
         transition: all 350ms ease-in-out;
 
@@ -288,10 +292,67 @@
         width: 100%;
 
         img {
-            width: em(35);
+            width: em(25);
             height: auto;
 
-            margin: 0 em(20);
+            margin: 0 em(15);
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .contact-heading {
+        font-size: em(45);
+    }
+}
+
+@media screen and (min-width: 1500px) {
+    .contact-heading {
+        font-size: em(50);
+    }
+
+    .form-heading {
+        font-size: em(40);
+    }
+
+    .send {
+        font-size: em(20);
+    }
+
+    .main-contact {
+        width: em(600);
+    }
+
+    #name,
+    #email,
+    #subject,
+    #message {
+        padding: em(10, 16) em(12, 16);
+    }
+
+    .personal {
+        font-size: em(18);
+    }
+
+    .socials {
+        img {
+            width: 30px;
+        }
+    }
+}
+
+@media screen and (min-width: 1900px) {
+    .contact-heading {
+        font-size: em(60);
+    }
+
+    .main-contact {
+        width: em(700);
+    }
+
+    .socials {
+        img {
+            width: 40px;
         }
     }
 }
