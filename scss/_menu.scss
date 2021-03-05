@@ -28,6 +28,11 @@
     }
 }
 
+.logo {
+    border: none;
+    outline: none;
+}
+
 @media screen and (max-width: 991px) {
     .nav-container {
         height: 10vh;
