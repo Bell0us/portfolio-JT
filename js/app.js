@@ -105,7 +105,7 @@ const logoSwitch = document.querySelector('.logo-switch')
 
 /*
  *
- * Swiperino
+ * Swiperino na mobilu
  *
  */
 
