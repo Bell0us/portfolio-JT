@@ -304,7 +304,7 @@ gsap.from('.site-container', {
         start: 'top 100%',
         scrub: 1
     },
-    y: '60%',
+    y: '30%',
     opacity: 0,
     duration: 1,
     ease: 'power3.out',
