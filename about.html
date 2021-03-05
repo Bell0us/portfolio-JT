@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--    
+        *
+        * Style sheets
+        *
+    -->
+
+    <!-- Fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+    <!-- Main css-->
+    <link rel="stylesheet" href="css/aboutPage.css">
+
+    <title>About Me</title>
+</head>
+
+<body>
+    <div class="container-fluid main-container">
+        <div class="row  about-page-container">
+            <div class="col-lg-6 desktop-col">
+                <img class="astronaut" src="img/astronaut.svg" alt="">
+            </div>
+            <div class="col-lg-6 main-col">
+                <div class="row web-dev-row">
+                    <h2 class="heading web-dev-heading">
+                        Me as a <span>Web developer</span>
+                    </h2>
+                    <p class="text web-dev-text">
+                        I have been interested in web development for about two years. It's not just a job for me, but
+                        rather fun. The feeling that I have created something from scratch, something that people will
+                        not just use, but enjoy using it fills me with pride and determination. In design, I strive not
+                        only for appearance, but also functionality and connectivity with your customers.
+                    </p>
+                </div>
+                <div class="row human-row">
+                    <h2 class="heading human-heading">
+                        Me as a <span>Human</span>
+                    </h2>
+                    <p class="text human-text">
+                        I am a seventeen-year-old student at a grammar school in České Budějovice. I am a member of the
+                        Czech national karate team, which I am very proud of. In addition to karate and website
+                        development, I spend my free time watching Netflix, playing PC games with my friends, and
+                        occasionally
+                        partying or going on adventures.
+                    </p>
+                </div>
+                <div class="row cv-row">
+                    <a class="cv-btn" href="#" download="Jáchym-Tinavský.pdf">Download my CV</a>
+                </div>
+            </div>
+        </div>
+        <a href="/index.html">
+            <svg class="arrow" width="97" height="38" viewBox="0 0 97 38" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M1.23223 17.2322C0.25592 18.2085 0.25592 19.7915 1.23223 20.7678L17.1421 36.6777C18.1184 37.654 19.7014 37.654 20.6777 36.6777C21.654 35.7014 21.654 34.1184 20.6777 33.1421L6.53554 19L20.6777 4.85786C21.654 3.88155 21.654 2.29864 20.6777 1.32233C19.7014 0.34602 18.1184 0.34602 17.1421 1.32233L1.23223 17.2322ZM97 16.5L3 16.5L3 21.5L97 21.5L97 16.5Z"
+                    fill="#FFF2F2" />
+            </svg>
+        </a>
+    </div>
+
+    <!-- GSAP 3 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"
+        integrity="sha512-1dalHDkG9EtcOmCnoCjiwQ/HEB5SDNqw8d4G2MKoNwjiwMNeBAkudsBCmSlMnXdsH8Bm0mOd3tl/6nL5y0bMaQ=="
+        crossorigin="anonymous"></script>
+
+    <!-- Main.js -->
+    <script src="about/aboutApp.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,186 @@
+@import '../scss/variables';
+@import '../scss/mixins';
+
+/*
+*
+* Generals
+*
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: url('../img/stardust.png');
+    color: $main-font-color;
+
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    a {
+        text-decoration: none;
+        color: $main-font-color;
+
+    }
+}
+
+.main-container {
+    height: 100vh;
+
+    position: relative;
+
+}
+
+.about-page-container {
+    height: 100%;
+}
+
+.desktop-col,
+.main-col {
+    height: 100%;
+
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.main-col {
+    align-items: flex-start;
+
+    border-right: em(2) solid $line-color;
+}
+
+.arrow {
+    position: absolute;
+    bottom: 30px;
+    left: 50px;
+
+
+    &:hover,
+    &:focus {
+        animation: arrowAnim .5s ease-in-out;
+    }
+}
+
+@keyframes arrowAnim {
+    0% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(-20%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+
+.heading {
+    font-size: clamp(em(30), 4vw, em(70));
+    font-weight: $light;
+
+    span {
+        font-weight: $regular;
+
+        color: $main-highligh-color;
+    }
+}
+
+.text {
+    font-size: clamp(em(12), .8vw, em(30));
+    font-weight: $light;
+}
+
+.cv-btn {
+    font-size: clamp(em(18), 1.5vw, em(35));
+    font-weight: $light;
+
+    color: $main-highligh-color;
+
+    padding: em(6) em(18);
+
+
+    background-color: unset;
+    border: em(2.5) solid $main-highligh-color;
+    border-radius: em(61);
+
+    transition: color .5s ease-out;
+    transition: background-color .5s ease-out;
+
+    &:hover,
+    &:focus {
+        background-color: $main-highligh-color;
+        color: $main-font-color;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .arrow {
+        bottom: 20px;
+        left: 40px;
+
+        width: em(60);
+        height: auto;
+    }
+}
+
+
+@media screen and (max-width: 991px) {
+    .desktop-col {
+        display: none;
+    }
+
+    .main-col {
+        width: 80%;
+
+        margin: auto;
+
+        border: none;
+
+        align-items: center;
+    }
+
+    .main-container {
+        text-align: center;
+
+        padding: 0;
+    }
+
+    .text {
+
+        margin: 0 auto;
+
+        max-width: 70vw;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .astronaut {
+        width: 60%;
+        height: auto;
+
+        opacity: .7;
+        transform: rotate(-37deg);
+    }
+
+    .main-container {
+        padding-right: em(60);
+    }
+
+    .text {
+
+        max-width: 35vw;
+    }
+}
