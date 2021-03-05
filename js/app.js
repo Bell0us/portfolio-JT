@@ -109,7 +109,7 @@ const logoSwitch = document.querySelector('.logo-switch')
  *
  */
 
-// Swipe left
+// ! Swipe left
 
 uiCard.addEventListener('swiped-left', function (e) {
     uiSwitch.classList.remove('switch-active')
@@ -131,7 +131,7 @@ frontEndCard.addEventListener('swiped-left', function (e) {
     logoCard.style.zIndex = "1";
 });
 
-//swipe right
+// ! swipe right
 
 frontEndCard.addEventListener('swiped-right', function (e) {
     uiSwitch.classList.add('switch-active');
@@ -232,7 +232,7 @@ tl.to('.intro-logo', {
  *
  */
 
-// Landing page
+// ! Landing page
 
 tl.from('.home-heading', {
         y: '20%',
@@ -260,11 +260,23 @@ tl.from('.home-heading', {
     }, "-=1")
 
 
+/*
+ *
+ * ScrollTrigger animatons
+ *
+ */
+
 gsap.registerPlugin(ScrollTrigger);
 
-
+/*
+ *
+ * Desktop animations
+ *
+ */
 
 if (window.innerWidth >= 991) {
+
+    // ! Work page
 
     gsap.from('.work-heading', {
         scrollTrigger: {
@@ -314,6 +326,9 @@ if (window.innerWidth >= 991) {
         ease: 'power3.out',
     })
 
+
+    // ! About page
+
     gsap.from('.about-heading', {
         scrollTrigger: {
             trigger: '.about-heading',
@@ -337,39 +352,6 @@ if (window.innerWidth >= 991) {
         duration: 1,
         ease: 'power3.out',
     })
-
-    gsap.from('.contact-heading', {
-        scrollTrigger: {
-            trigger: '.contact-heading',
-            start: 'top 100%',
-            scrub: 1
-        },
-        y: '60%',
-        opacity: 0,
-        duration: 1,
-        ease: 'power3.out',
-    })
-    gsap.from('.main-contact', {
-        scrollTrigger: {
-            trigger: '.main-contact',
-            start: 'top 100%',
-            scrub: 1
-        },
-        opacity: 0,
-        duration: 1,
-        ease: 'power3.out',
-    })
-    gsap.from('.diff-contact', {
-        scrollTrigger: {
-            trigger: '.diff-contact',
-            start: 'top 100%',
-            scrub: 1
-        },
-        opacity: 0,
-        duration: 1,
-        ease: 'power3.out',
-    })
-
 
     gsap.from('.ui-card', {
         scrollTrigger: {
@@ -404,10 +386,54 @@ if (window.innerWidth >= 991) {
         duration: 1,
         ease: 'power3.out',
     })
+
+
+    // ! Contact page
+
+    gsap.from('.contact-heading', {
+        scrollTrigger: {
+            trigger: '.contact-heading',
+            start: 'top 100%',
+            scrub: 1
+        },
+        y: '60%',
+        opacity: 0,
+        duration: 1,
+        ease: 'power3.out',
+    })
+    gsap.from('.main-contact', {
+        scrollTrigger: {
+            trigger: '.main-contact',
+            start: 'top 100%',
+            scrub: 1
+        },
+        opacity: 0,
+        duration: 1,
+        ease: 'power3.out',
+    })
+    gsap.from('.diff-contact', {
+        scrollTrigger: {
+            trigger: '.diff-contact',
+            start: 'top 100%',
+            scrub: 1
+        },
+        opacity: 0,
+        duration: 1,
+        ease: 'power3.out',
+    })
 }
 
 
+/*
+ *
+ * Mobile animations
+ *
+ */
+
+
 if (window.innerWidth <= 991) {
+
+    // ! Work page
 
     gsap.from('.work-heading', {
         scrollTrigger: {
@@ -457,6 +483,10 @@ if (window.innerWidth <= 991) {
         ease: 'power3.out',
     })
 
+
+
+    // ! About page
+
     gsap.from('.about-heading', {
         scrollTrigger: {
             trigger: '.about-heading',
@@ -480,6 +510,21 @@ if (window.innerWidth <= 991) {
         duration: 1,
         ease: 'power3.out',
     })
+
+    gsap.from('.cards-container', {
+        scrollTrigger: {
+            trigger: '.cards-container',
+            start: 'top 100%',
+            scrub: 1
+        },
+        y: "10%",
+        opacity: 0,
+        duration: 1,
+        ease: 'power3.out',
+    })
+
+
+    // ! contact page
 
     gsap.from('.contact-heading', {
         scrollTrigger: {
@@ -508,19 +553,6 @@ if (window.innerWidth <= 991) {
             start: 'top 100%',
             scrub: 1
         },
-        opacity: 0,
-        duration: 1,
-        ease: 'power3.out',
-    })
-
-
-    gsap.from('.cards-container', {
-        scrollTrigger: {
-            trigger: '.cards-container',
-            start: 'top 100%',
-            scrub: 1
-        },
-        y: "10%",
         opacity: 0,
         duration: 1,
         ease: 'power3.out',
