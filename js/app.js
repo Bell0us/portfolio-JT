@@ -29,13 +29,13 @@ $(window).scroll(function () {
     if (scroll >= home.offset().top) {
         homeLink.addClass('active').siblings().removeClass('active');
     }
-    if (scroll >= work.offset().top) {
+    if (scroll >= (work.offset().top - 400)) {
         workLink.addClass('active').siblings().removeClass('active');
     }
-    if (scroll >= about.offset().top) {
+    if (scroll >= (about.offset().top - 400)) {
         aboutLink.addClass('active').siblings().removeClass('active');
     }
-    if (scroll >= contact.offset().top) {
+    if (scroll >= (contact.offset().top - 400)) {
         contactLink.addClass('active').siblings().removeClass('active');
     }
 
@@ -224,3 +224,198 @@ tl.to('.intro-logo', {
         duration: 1,
         ease: 'power1.out'
     }, "-=1")
+
+
+/*
+ *
+ * GSAP Anims
+ *
+ */
+
+// Landing page
+
+tl.from('.home-heading', {
+        y: '20%',
+        opacity: 0,
+        duration: 1,
+        ease: 'power3.out'
+    }, "-=.5")
+    .from('.introduction', {
+        y: '20%',
+        opacity: 0,
+        duration: 1,
+        ease: 'power3.out'
+    }, "-=.5")
+    .from('.scroll-badge', {
+        y: '-20%',
+        opacity: 0,
+        duration: 1,
+        ease: 'power3.out'
+    }, "-=.5")
+    .from('.scroll-text', {
+        y: '-20%',
+        opacity: 0,
+        duration: 1,
+        ease: 'power3.out'
+    }, "-=1")
+
+
+gsap.registerPlugin(ScrollTrigger);
+
+gsap.from('.work-heading', {
+    scrollTrigger: {
+        trigger: '.work-heading',
+        start: 'top 100%',
+        scrub: 1
+    },
+    y: '60%',
+    opacity: 0,
+    duration: 1,
+    ease: 'power3.out',
+})
+
+gsap.from('.discover-button', {
+    scrollTrigger: {
+        trigger: '.discover-button',
+        start: 'top 100%',
+        scrub: 1
+    },
+    y: '60%',
+    opacity: 0,
+    duration: 1,
+    ease: 'power3.out',
+})
+
+gsap.from('.site-placeholder', {
+    scrollTrigger: {
+        trigger: '.site-placeholder',
+        start: 'top 100%',
+        scrub: 1
+    },
+    y: '60%',
+    opacity: 0,
+    duration: 1,
+    ease: 'power3.out',
+})
+
+gsap.from('.site-container', {
+    scrollTrigger: {
+        trigger: '.site-container',
+        start: 'top 100%',
+        scrub: 1
+    },
+    y: '60%',
+    opacity: 0,
+    duration: 1,
+    ease: 'power3.out',
+})
+
+gsap.from('.about-heading', {
+    scrollTrigger: {
+        trigger: '.about-heading',
+        start: 'top 100%',
+        scrub: 1
+    },
+    y: '60%',
+    opacity: 0,
+    duration: 1,
+    ease: 'power3.out',
+})
+
+gsap.from('.learn-more-btn', {
+    scrollTrigger: {
+        trigger: '.learn-more-btn',
+        start: 'top 100%',
+        scrub: 1
+    },
+    y: '60%',
+    opacity: 0,
+    duration: 1,
+    ease: 'power3.out',
+})
+
+gsap.from('.contact-heading', {
+    scrollTrigger: {
+        trigger: '.contact-heading',
+        start: 'top 100%',
+        scrub: 1
+    },
+    y: '60%',
+    opacity: 0,
+    duration: 1,
+    ease: 'power3.out',
+})
+gsap.from('.main-contact', {
+    scrollTrigger: {
+        trigger: '.main-contact',
+        start: 'top 100%',
+        scrub: 1
+    },
+    opacity: 0,
+    duration: 1,
+    ease: 'power3.out',
+})
+gsap.from('.diff-contact', {
+    scrollTrigger: {
+        trigger: '.diff-contact',
+        start: 'top 100%',
+        scrub: 1
+    },
+    opacity: 0,
+    duration: 1,
+    ease: 'power3.out',
+})
+
+
+if (window.innerWidth >= 991) {
+
+    gsap.from('.ui-card', {
+        scrollTrigger: {
+            trigger: '.ui-card',
+            start: 'top 100%',
+            scrub: 1
+        },
+        y: '60%',
+        opacity: 0,
+        duration: 1,
+        ease: 'power3.out',
+    })
+    gsap.from('.frontend-card', {
+        scrollTrigger: {
+            trigger: '.frontend-card',
+            start: 'top 100%',
+            scrub: 1
+        },
+        y: '60%',
+        opacity: 0,
+        duration: 1,
+        ease: 'power3.out',
+    })
+    gsap.from('.logo-card', {
+        scrollTrigger: {
+            trigger: '.logo-card',
+            start: 'top 100%',
+            scrub: 1
+        },
+        y: '60%',
+        opacity: 0,
+        duration: 1,
+        ease: 'power3.out',
+    })
+}
+
+
+if (window.innerWidth <= 991) {
+
+    gsap.from('.cards-container', {
+        scrollTrigger: {
+            trigger: '.cards-container',
+            start: 'top 100%',
+            scrub: 1
+        },
+        y: '60%',
+        opacity: 0,
+        duration: 1,
+        ease: 'power3.out',
+    })
+}
