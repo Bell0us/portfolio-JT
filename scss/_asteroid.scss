@@ -121,13 +121,10 @@
 
     .asteroid-0,
     .asteroid-2,
+    .asteroid-3,
     .asteroid-4,
     .astronaut {
         display: none;
-    }
-
-    .asteroid-3 {
-        left: em(-30);
     }
 
     .asteroid-7 {
@@ -138,6 +135,6 @@
 
     .rocket {
         left: em(-160);
-        top: 62%;
+        top: 70%;
     }
 }

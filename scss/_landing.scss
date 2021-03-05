@@ -28,7 +28,8 @@
 
 @media screen and (max-width: 991px) {
     .content {
-        height: 92vh;
+        min-height: 100vh;
+        overflow: hidden;
 
         text-align: center;
     }

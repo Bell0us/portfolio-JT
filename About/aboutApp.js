@@ -1,11 +1,18 @@
 const tl = gsap.timeline();
 
-tl.from('.web-dev-heading', {
-        x: '-20%',
+tl.from('.astronaut', {
+        x: '30%',
+        y: '20%',
         opacity: 0,
         duration: 2,
         ease: 'power3.out'
     })
+    .from('.web-dev-heading', {
+        x: '-20%',
+        opacity: 0,
+        duration: 2,
+        ease: 'power3.out'
+    }, "-=1.5")
     .from('.web-dev-text', {
         x: '-20%',
         opacity: 0,
@@ -35,4 +42,4 @@ tl.from('.web-dev-heading', {
         opacity: 0,
         duration: 1,
         ease: 'power3.out'
-    })
+    }, "-=.5")

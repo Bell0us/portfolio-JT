@@ -33,9 +33,11 @@
     outline: none;
 }
 
+
+
 @media screen and (max-width: 991px) {
     .nav-container {
-        height: 10vh;
+        height: em(90);
         width: 100%;
 
         padding: 0 em(20);
@@ -239,5 +241,23 @@
 
     .active {
         border-right: em(3, 35) solid $main-highligh-color;
+    }
+}
+
+/*
+*
+* Fking iphone SE
+*
+*/
+
+@media screen and (max-height: 600px) {
+    .overlay-menu-links {
+        font-size: em(35);
+    }
+}
+
+@media screen and (max-height: 455px) {
+    .overlay-menu-links {
+        font-size: em(25);
     }
 }

@@ -6,7 +6,8 @@
 
 
 #about {
-    height: 100vh;
+    min-height: 100vh;
+    overflow: hidden;
 }
 
 
@@ -356,5 +357,15 @@
     .card {
         width: em(400);
         height: em(350);
+    }
+}
+
+@media screen and (max-height: 580px) {
+    .card-col {
+        position: absolute;
+        bottom: -30px;
+        left: 50%;
+
+        transform: translateX(-50%);
     }
 }

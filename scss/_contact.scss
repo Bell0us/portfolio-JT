@@ -6,7 +6,7 @@
 
 
 #contact {
-    height: 100vh;
+    min-height: 100vh;
     overflow: hidden;
 }
 
@@ -16,7 +16,13 @@
 *
 */
 
+
 @media screen and (max-width: 991px) {
+
+    #contact {
+        padding-bottom: em(20);
+
+    }
 
     // Heading
     .contact-heading-container {
@@ -43,18 +49,17 @@
     }
 
     // Form
-    .form-container {
-        height: 60%;
-    }
 
     .main-contact {
         background-color: rgba($cards-bg, .7);
+
+        min-height: em(550);
 
         width: 90%;
 
         margin: 0 auto;
 
-        padding-top: em(20);
+        padding: em(20) em(30);
 
         border-radius: em(6);
     }
@@ -121,6 +126,18 @@
     // Different type of contact
     .diff-contact {
         display: none;
+    }
+}
+
+
+@media screen and (max-width: 375px) {
+    #contact {
+        min-height: em(1000);
+        padding-bottom: em(5);
+    }
+
+    .send {
+        margin-top: 0;
     }
 }
 
@@ -373,5 +390,23 @@
         img {
             width: 40px;
         }
+    }
+}
+
+@media screen and (max-height: 640px) {
+    .main-contact {
+        min-height: em(600);
+    }
+}
+
+@media screen and (max-height: 770px) {
+    #contact {
+        min-height: em(900);
+    }
+}
+
+@media screen and (max-height: 770px) {
+    #contact {
+        min-height: em(900);
     }
 }
